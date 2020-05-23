@@ -6,6 +6,10 @@ authors = ["Mrnobody <mrcartoonster@icloud.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+scrapy = "^2.1.0"
+ipython = "^7.14.0"
+interrogate = "^1.2.0"
+prettyprint = "^0.1.5"
 
 [tool.poetry.dev-dependencies]
 
