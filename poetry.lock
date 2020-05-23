@@ -395,6 +395,14 @@ test = ["flaky", "pretend", "pytest (>=3.0.1)"]
 
 [[package]]
 category = "main"
+description = "A cross-platform clipboard module for Python. (Only handles plain text for now.)"
+name = "pyperclip"
+optional = false
+python-versions = "*"
+version = "1.8.0"
+
+[[package]]
+category = "main"
 description = "Multi-producer-multi-consumer signal dispatching mechanism"
 marker = "platform_python_implementation == \"PyPy\""
 name = "pypydispatcher"
@@ -561,7 +569,7 @@ test = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 
 [metadata]
-content-hash = "d4c7fc04cecd10bd47ba44015653f407caa1f6cc9e04bd49a18f0749d774951e"
+content-hash = "b7fe7f96098f1a0a22a1921ee5a3976d464217b2e63ccc830420177da4427ce7"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -793,6 +801,9 @@ pyhamcrest = [
 pyopenssl = [
     {file = "pyOpenSSL-19.1.0-py2.py3-none-any.whl", hash = "sha256:621880965a720b8ece2f1b2f54ea2071966ab00e2970ad2ce11d596102063504"},
     {file = "pyOpenSSL-19.1.0.tar.gz", hash = "sha256:9a24494b2602aaf402be5c9e30a0b82d4a5c67528fe8fb475e3f3bc00dd69507"},
+]
+pyperclip = [
+    {file = "pyperclip-1.8.0.tar.gz", hash = "sha256:b75b975160428d84608c26edba2dec146e7799566aea42c1fe1b32e72b6028f2"},
 ]
 pypydispatcher = [
     {file = "PyPyDispatcher-2.1.2.tar.gz", hash = "sha256:b6bec5dfcff9d2535bca2b23c80eae367b1ac250a645106948d315fcfa9130f2"},
