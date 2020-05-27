@@ -47,3 +47,15 @@ repos:
          - --trailing-comma
          - --use-parentheses
          - --balanced
+# - repo: https://github.com/econchick/interrogate
+#   rev: 1.2.0  # or master if you're bold
+#   hooks:
+#   -   id: interrogate
+#       args:
+#         - -vv
+#         - --ignore-init-method  # Ignore __init__ method of classes. [default: False]
+#         - --ignore-init-module  # Ignore __init__.py modules. [default: False]
+#         # - -e 'middlewares.py'
+#         # - -e 'settings.py'
+#         #  - --quiet  # Do not print output [default: False]
+#         #  - --generate-badge PATH will find out where to badge
