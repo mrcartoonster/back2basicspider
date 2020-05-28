@@ -7,4 +7,7 @@ class BaseSpider(scrapy.Spider):
     start_urls = ["http://https://lifehacker.com/c/back-to-basics/"]
 
     def parse(self, response):
+        """
+        Parser for traversing the back-to-basics site.
+        """
         pass
