@@ -10,11 +10,12 @@ class BaseSpider(scrapy.Spider):
         """
         Parser for traversing the back-to-basics site.
         """
-        articles = response.xpath('//div[@class="cw4lnv-5 aoiLP"]')
-        for href in articles:
-            yield response.follow(href, callback=self.parsing)
+        articles = response.xpath('//div[@class="cw4lnv-5 aoiLP"]/a')
+        #   for href in articles:
+        #       yield response.follow(href, callback=self.parsing)
+        yield response.follow_all(articles, callback=self.parsing)
 
-        page = back = response.xpath('//div[@class="qsfpej-0 bIkJGf"]')
+        page = response.xpath('//div[@class="qsfpej-0 bIkJGf"]/a')
         for href in page:
             yield response.follow(herf, callback=self.parse)
 
