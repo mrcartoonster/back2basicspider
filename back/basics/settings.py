@@ -1,20 +1,18 @@
 # -*- coding: utf-8 -*-
+from confidential import SecretsManager
 
-# Scrapy settings for basics project
-#
-# For simplicity, this file contains only settings considered important or
-# commonly used. You can find more settings consulting the documentation:
-#
-#     https://docs.scrapy.org/en/latest/topics/settings.html
-#     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-
+confidential = SecretsManager(
+    secrets_file_default=".confidential/default.json",
+    secrets_file=os.environ.get("SECRETS_FILE"),
+    region_name="us-east-1"
+)
 BOT_NAME = "basics"
 
 SPIDER_MODULES = ["basics.spiders"]
 NEWSPIDER_MODULE = "basics.spiders"
 
 LOG_LEVEL = "INFO"
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'basics (+http://www.yourdomain.com)'
 
