@@ -26,14 +26,9 @@ class BaseSpider(scrapy.Spider):
             loader = ItemLoader(item=BasicsItem(), selector=p)
             loader.add_xpath(
                 "title",
-                '//header[@class="sc-1efpnfq-1 hQgdUv"]/h1/a/text() | //h1[@class="gkv9lo-4 eNOFiQ"]/a/text() | //a[@class="sc-1out364-0 hMndXN js_link"]/h1/text()',
+                '//header[@class="sc-1efpnfq-1 hQgdUv"]/h1/a/text() |\
+                //h1[@class="gkv9lo-4 eNOFiQ"]/a/text() |\
+                //a[@class="sc-1out364-0 hMndXN js_link"]/h1/text()',
             )
             loader.add_xpath("para", "./p[1]/text()")
             yield loader.load_item()
-        #   for p in para:
-        #       yield {
-        #           "para": p.xpath("./p[1]/text()").get(),
-        #           "title": p.xpath(
-        #               '//header[@class="sc-1efpnfq-1 hQgdUv"]/h1/a/text() | //h1[@class="gkv9lo-4 eNOFiQ"]/a/text() | //a[@class="sc-1out364-0 hMndXN js_link"]/h1/text()'
-        #           ).get(),
-        #       }
