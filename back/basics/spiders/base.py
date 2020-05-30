@@ -27,5 +27,5 @@ class BaseSpider(scrapy.Spider):
                 "para": p.xpath("./p[1]/text()").get(),
                 "title": p.xpath(
                     '//header[@class="sc-1efpnfq-1 hQgdUv"]/h1/a/text()'
-                ),
+                ).get(),
             }
