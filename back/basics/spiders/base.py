@@ -32,8 +32,7 @@ class BaseSpider(scrapy.Spider):
             )
             response.xpath('//div[@class="sc-1mep9y1-0 sc-1ixdk2y-0 gclRUW"]')
             loader.add_xpath(
-                "author",
-                '//div[@class="sc-1mep9y1-0 sc-1ixdk2y-0 gclRUW"]'
+                "author", '//div[@class="sc-1mep9y1-0 sc-1ixdk2y-0 gclRUW"]'
             )
             loader.add_xpath("para", "./p[1]/text()")
             yield loader.load_item()
