@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
-
-# Define your item pipelines here
-#
-# Don't forget to add your pipeline to the ITEM_PIPELINES setting
-# See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+from scrapy.exceptions import DropItem
 
 
 class BasicsPipeline:
+    """Pipeline to drop authors that are not Beth Skwarecki or Claire Lower."""
+
     def process_item(self, item, spider):
-        return item
+        """Check to see if author is in our list."""
+        if item.get("author") in ["Beth Skwarecki", "Claire Lower"]:
+            return item
+
+        else:
+            raise DropItem("Not the authors we want.")
