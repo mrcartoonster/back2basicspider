@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
+import os
+
 from confidential import SecretsManager
 
 confidential = SecretsManager(
-    secrets_file_default=".confidential/default.json",
+    secrets_file_default="/home/mrnobody/projects/back2basicspider/.confidential/default.json",
     secrets_file=os.environ.get("SECRETS_FILE"),
-    region_name="us-east-1"
+    region_name="us-east-1",
 )
 BOT_NAME = "basics"
 
@@ -12,6 +14,7 @@ SPIDER_MODULES = ["basics.spiders"]
 NEWSPIDER_MODULE = "basics.spiders"
 
 LOG_LEVEL = "INFO"
+DB_URI = confidential["DB_URI"]
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'basics (+http://www.yourdomain.com)'
