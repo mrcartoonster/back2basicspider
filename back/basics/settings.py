@@ -14,7 +14,7 @@ SPIDER_MODULES = ["basics.spiders"]
 NEWSPIDER_MODULE = "basics.spiders"
 
 LOG_LEVEL = "INFO"
-DATABASE = confidential["DATABASE"]
+DB_URI = confidential["DB_URI"]
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'basics (+http://www.yourdomain.com)'
