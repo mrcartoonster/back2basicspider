@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 from databases import Database
 from models import basics
-from scrapy.exceptions import DropItem
-
+from sqlalchemy.engine.url import URL
+# from scrapy.exceptions import DropItem
+from settings import DATABASE
 
 class BasicsPipeline:
     """Pipeline to drop authors that are not Beth Skwarecki or Claire Lower."""
@@ -18,4 +19,13 @@ class BasicsPipeline:
 
     def process_item(self, item, spider):
         """Database pipeline insertion with Encode databases."""
-        pass
+
+        database = Database(URL(DATABASE), ssl=True)
+
+        await database.connect()
+
+        query = notes.insert()
+        await database.execute(query=query, values=item)
+
+        await database.disconnect()
+        return item

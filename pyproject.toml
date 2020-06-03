@@ -17,6 +17,7 @@ sqlalchemy = "^1.3.17"
 databases = {extras = ["postgresql"], version = "^0.3.2"}
 yakutils = "^1.7.0"
 prettyprinter = "^0.18.0"
+pretty_errors = "^1.2.17"
 
 [tool.poetry.dev-dependencies]
 ipython = "^7.15.0"
