@@ -8,6 +8,9 @@ confidential = SecretsManager(
     secrets_file=os.environ.get("SECRETS_FILE"),
     region_name="us-east-1",
 )
+from databases import Database
+
+
 BOT_NAME = "basics"
 
 SPIDER_MODULES = ["basics.spiders"]
@@ -15,6 +18,7 @@ NEWSPIDER_MODULE = "basics.spiders"
 
 LOG_LEVEL = "INFO"
 DB_URI = confidential["DB_URI"]
+DATABASE: Database(DB_URI)
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'basics (+http://www.yourdomain.com)'
