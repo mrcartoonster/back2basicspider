@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-from typing import Any
-
 from databases import Database
 
 from .models import basics
@@ -14,8 +12,6 @@ class BasicsPipeline:
     Postgres database.
     """
 
-    database = Database
-
     def __init__(self, db_uri):
 
         """
@@ -23,6 +19,7 @@ class BasicsPipeline:
         database is successful.
         """
         self.db_uri = db_uri
+        self.db = db
 
     @classmethod
     def from_crawler(cls, crawler):
@@ -31,13 +28,16 @@ class BasicsPipeline:
          Scrapy crawler object to retreive database URL and database
          model from settings.py.
          """
-        return cls(db_uri=crawler.settings.get("DB_URI"),)
+        return cls(
+            db_uri=crawler.settings.get("DB_URI"),
+            db=crawler.settingsg.get("DATABASE"),
+        )
 
     async def open_spider(self, spider):
 
         """Asyncio database connection."""
-        self.database = Database(self.db_uri)
-        await self.database.connect()
+        self.db = Database(self.db_uri)
+        await self.db.connect()
 
     async def close_spider(self, spider):
 
@@ -45,9 +45,9 @@ class BasicsPipeline:
         Asyncio database disconnect. Will create an async context block once
         able to insert items into Postgres database.
         """
-        await self.database.disconnect()
+        await self.db.disconnect()
 
     async def process_item(self, item, spider):
         query = basics.insert()
-        await self.database.execute(query=query, values=item)
+        await database.execute(query=query, values=item)
         return item

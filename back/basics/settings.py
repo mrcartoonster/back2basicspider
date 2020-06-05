@@ -2,13 +2,13 @@
 import os
 
 from confidential import SecretsManager
+from databases import Database
 
 confidential = SecretsManager(
     secrets_file_default="/home/mrnobody/projects/back2basicspider/.confidential/default.json",
     secrets_file=os.environ.get("SECRETS_FILE"),
     region_name="us-east-1",
 )
-from databases import Database
 
 
 BOT_NAME = "basics"
