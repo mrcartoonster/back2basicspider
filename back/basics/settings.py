@@ -82,7 +82,7 @@ ITEM_PIPELINES = {
 # each remote server
 # AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
 # Enable showing throttling stats for every response received:
-# AUTOTHROTTLE_DEBUG = False
+# AUTOTHROTTLE_DEBUe = False
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
