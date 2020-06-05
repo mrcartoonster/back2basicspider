@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from dataclasses import dataclass
+from typing import Any
 from databases import Database
 
 from .models import basics
@@ -12,13 +14,14 @@ class BasicsPipeline:
     well as inserting authors name, article title and first paragrapg into
     Postgres database.
     """
+    database = Database
+
     def __init__(self, db_uri, database):
-     """
-     Will change this using dataclasses once inserting items into Postgres
-     database is successful.
-     """
-     self.db_uri = db_uri
-     self.database = database
+    """
+    Will change this using dataclasses once inserting items into Postgres
+    database is successful.
+    """
+    self.db_uri = db_uri
 
 
     @classmethod
@@ -28,14 +31,13 @@ class BasicsPipeline:
      model from settings.py.
      """
      return cls(
-         db_uri=crawler.settings.get("DB_URI"),
-         database=crawler.settings.get("DATABASE")
-     )
+        db_uri=crawler.settings.get("DB_URI"),
+    )
 
     async def open_spider(self, spider):
        """Asyncio database connection."""
-       database = Database(self.db_uri)
-       await database.connect()
+       self.db = database(self.db_uri)
+       await self.db.connect()
 
 
     async def close_spider(self, spider):
@@ -43,9 +45,9 @@ class BasicsPipeline:
        Asyncio database disconnect. Will create an async context block once
        able to insert items into Postgres database.
        """
-       await database.disconnect()
+       await self.db.disconnect()
 
     async def process_item(self, item, spider):
         query = basics.insert()
-        await database.execute(query=query, values=item)
+        await self.db.execute(query=query, values=item)
         return item
