@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-from dataclasses import dataclass
 from typing import Any
+
 from databases import Database
 
 from .models import basics
 from .settings import DB_URI
-
 
 
 class BasicsPipeline:
@@ -14,40 +13,41 @@ class BasicsPipeline:
     well as inserting authors name, article title and first paragrapg into
     Postgres database.
     """
-    database = Database
 
-    def __init__(self, db_uri, database):
-    """
-    Will change this using dataclasses once inserting items into Postgres
-    database is successful.
-    """
-    self.db_uri = db_uri
+    database = None
 
+    def __init__(self, db_uri):
+
+        """
+        Will change this using dataclasses once inserting items into Postgres
+        database is successful.
+        """
+        self.db_uri = db_uri
 
     @classmethod
     def from_crawler(cls, crawler):
-     """
-     Scrapy crawler object to retreive database URL and database
-     model from settings.py.
-     """
-     return cls(
-        db_uri=crawler.settings.get("DB_URI"),
-    )
+
+        """
+         Scrapy crawler object to retreive database URL and database
+         model from settings.py.
+         """
+        return cls(db_uri=crawler.settings.get("DB_URI"),)
 
     async def open_spider(self, spider):
-       """Asyncio database connection."""
-       self.db = database(self.db_uri)
-       await self.db.connect()
 
+        """Asyncio database connection."""
+        self.database = Database(self.db_uri)
+        await self.database.connect()
 
     async def close_spider(self, spider):
-       """
-       Asyncio database disconnect. Will create an async context block once
-       able to insert items into Postgres database.
-       """
-       await self.db.disconnect()
+
+        """
+        Asyncio database disconnect. Will create an async context block once
+        able to insert items into Postgres database.
+        """
+        await self.database.disconnect()
 
     async def process_item(self, item, spider):
         query = basics.insert()
-        await self.db.execute(query=query, values=item)
+        await self.database.execute(query=query, values=item)
         return item
