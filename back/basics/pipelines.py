@@ -14,7 +14,7 @@ class BasicsPipeline:
     Postgres database.
     """
 
-    database = None
+    database = Database
 
     def __init__(self, db_uri):
 
