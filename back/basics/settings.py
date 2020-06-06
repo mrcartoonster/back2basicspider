@@ -5,7 +5,9 @@ from confidential import SecretsManager
 from databases import Database
 
 confidential = SecretsManager(
-    secrets_file_default="/home/mrnobody/projects/back2basicspider/.confidential/default.json",
+    secrets_file_default=(
+        "/home/mrnobody/projects/back2basicspider/.confidential/default.json"
+    ),
     secrets_file=os.environ.get("SECRETS_FILE"),
     region_name="us-east-1",
 )
@@ -20,7 +22,7 @@ LOG_LEVEL = "INFO"
 DB_URI = confidential["DB_URI"]
 DATABASE: Database(DB_URI)
 
-# Crawl responsibly by identifying yourself (and your website) on the user-agent
+# Crawl responsible by identifying yourself (and  website) on the user-agent
 # USER_AGENT = 'basics (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
@@ -45,8 +47,8 @@ ROBOTSTXT_OBEY = True
 
 # Override the default request headers:
 # DEFAULT_REQUEST_HEADERS = {
-#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#   'Accept-Language': 'en',
+#  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+#  'Accept-Language': 'en',
 # }
 
 # Enable or disable spider middlewares
@@ -85,7 +87,7 @@ ITEM_PIPELINES = {
 # AUTOTHROTTLE_DEBUe = False
 
 # Enable and configure HTTP caching (disabled by default)
-# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
+# See #httpcache-middleware-settings
 # HTTPCACHE_ENABLED = True
 # HTTPCACHE_EXPIRATION_SECS = 0
 # HTTPCACHE_DIR = 'httpcache'
