@@ -2,7 +2,6 @@
 import os
 
 from confidential import SecretsManager
-from databases import Database
 
 confidential = SecretsManager(
     secrets_file_default=(
@@ -20,7 +19,6 @@ NEWSPIDER_MODULE = "basics.spiders"
 
 LOG_LEVEL = "INFO"
 DB_URI = confidential["DB_URI"]
-DATABASE: Database(DB_URI)
 
 # Crawl responsible by identifying yourself (and  website) on the user-agent
 # USER_AGENT = 'basics (+http://www.yourdomain.com)'
