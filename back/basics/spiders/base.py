@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from basics.items import BasicsItem
 from scrapy.loader import ItemLoader
+
+from basics.items import BasicsItem
 
 
 class BaseSpider(scrapy.Spider):
@@ -12,15 +13,14 @@ class BaseSpider(scrapy.Spider):
 
     def parse(self, response):
         """Parser for traversing the back-to-basics site."""
+        self.logger(f"A response from {response.url} just arrived!")
         articles = response.xpath('//div[@class="cw4lnv-5 aoiLP"]/a')
         for href in articles:
             yield response.follow(href, callback=self.parsing)
 
     def parsing(self, response):
         """Parse first paragraph."""
-        para = response.xpath(
-            '//div[@class="r43lxo-0 hEDDLA js_post-content"]'
-        )
+        para = response.xpath('//div[@class="r43lxo-0 hEDDLA js_post-content"]')
 
         for p in para:
             loader = ItemLoader(item=BasicsItem(), selector=p)
