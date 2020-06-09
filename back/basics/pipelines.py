@@ -11,4 +11,4 @@ class BasicsPipeline:
             return item
 
         else:
-            raise DropItem("Not the authors we want.")
+            raise DropItem("Not the author we want.")
