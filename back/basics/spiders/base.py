@@ -12,6 +12,7 @@ class BaseSpider(scrapy.Spider):
 
     def parse(self, response):
         """Parser for traversing the back-to-basics site."""
+        self.logger.info(f"A response from {response.url}!")
         articles = response.xpath('//div[@class="cw4lnv-5 aoiLP"]/a')
         for href in articles:
             yield response.follow(href, callback=self.parsing)
