@@ -13,6 +13,6 @@ class BasicsItem(scrapy.Item):
     author = scrapy.Field(
         input_processor=MapCompose(remove_tags), output_processor=TakeFirst(),
     )
-    paragrapy = scrapy.Field(
+    paragraph = scrapy.Field(
         input_processor=MapCompose(remove_tags), output_processor=Join(),
     )

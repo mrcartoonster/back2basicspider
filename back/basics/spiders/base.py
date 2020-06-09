@@ -12,7 +12,6 @@ class BaseSpider(scrapy.Spider):
 
     def parse(self, response):
         """Parser for traversing the back-to-basics site."""
-        self.logger.info(f"A response from {response.url}!")
         articles = response.xpath('//div[@class="cw4lnv-5 aoiLP"]/a')
         for href in articles:
             yield response.follow(href, callback=self.parsing)
@@ -35,5 +34,5 @@ class BaseSpider(scrapy.Spider):
             loader.add_xpath(
                 "author", '//div[@class="sc-1mep9y1-0 sc-1ixdk2y-0 gclRUW"]',
             )
-            loader.add_xpath("para", "./p[1]/text()")
+            loader.add_xpath("paragraph", "./p[1]/text()")
             yield loader.load_item()
