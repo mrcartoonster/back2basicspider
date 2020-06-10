@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
+from pathlib import Path
 
 from confidential import SecretsManager
 
@@ -69,8 +70,11 @@ ROBOTSTXT_OBEY = True
 ITEM_PIPELINES = {
     "basics.pipelines.BasicsPipeline": 300,
     "scrapy.pipelines.images.ImagesPipeline": 1,
+    "scrapy.pipelines.files.FilesPipeline": 1,
 }
 
+IMAGE_STORE = str(Path("images/").absolute())
+FILES_STORE = str(Path("files/").absolute())
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 AUTOTHROTTLE_ENABLED = True

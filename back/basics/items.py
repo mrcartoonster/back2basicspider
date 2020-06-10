@@ -16,3 +16,5 @@ class BasicsItem(scrapy.Item):
     paragraph = scrapy.Field(
         input_processor=MapCompose(remove_tags), output_processor=Join(),
     )
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
