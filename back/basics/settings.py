@@ -68,6 +68,7 @@ ROBOTSTXT_OBEY = True
 
 ITEM_PIPELINES = {
     "basics.pipelines.BasicsPipeline": 300,
+    "scrapy.pipelines.images.ImagesPipeline": 1,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
