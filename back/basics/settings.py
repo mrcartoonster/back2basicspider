@@ -73,8 +73,12 @@ ITEM_PIPELINES = {
     "scrapy.pipelines.files.FilesPipeline": 1,
 }
 
-IMAGE_STORE = str(Path("images/").absolute())
+IMAGES_STORE = str(Path("images/").absolute())
 FILES_STORE = str(Path("files/").absolute())
+IMAGES_THUMBS = {
+    "small": (50, 50),
+    "big": (270, 270),
+}
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 AUTOTHROTTLE_ENABLED = True
