@@ -35,9 +35,4 @@ class BaseSpider(scrapy.Spider):
                 "author", '//div[@class="sc-1mep9y1-0 sc-1ixdk2y-0 gclRUW"]',
             )
             loader.add_xpath("paragraph", "./p[1]/text()")
-            loader.add_xpath(
-                "image_urls",
-                '//div[@class="sc-1eow4w5-3 dMpnFX'
-                ' image-hydration-wrapper"]/div/img/@src',
-            )
             yield loader.load_item()
