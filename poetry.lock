@@ -67,6 +67,14 @@ version = "0.2.0"
 
 [[package]]
 category = "dev"
+description = "Compilations of various utilities"
+name = "bnmutils"
+optional = false
+python-versions = ">=3"
+version = "1.0.3"
+
+[[package]]
+category = "dev"
 description = "The AWS SDK for Python"
 name = "boto3"
 optional = false
@@ -371,6 +379,18 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 version = "0.10.0"
 
 [[package]]
+category = "dev"
+description = "package for easy logging"
+name = "logme"
+optional = false
+python-versions = ">=3.6"
+version = "1.3.2"
+
+[package.dependencies]
+bnmutils = "*"
+click = "*"
+
+[[package]]
 category = "main"
 description = "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API."
 name = "lxml"
@@ -639,7 +659,7 @@ category = "main"
 description = "YAML parser and emitter for Python"
 name = "pyyaml"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+python-versions = "*"
 version = "5.3.1"
 
 [[package]]
@@ -872,7 +892,7 @@ test = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 
 [metadata]
-content-hash = "134ad07d931f465e8a743d075ad4987b82771955a625df1714987ac906df6c43"
+content-hash = "a36a6cec44cc41098e42ebc0c6ebbd0f2f0f33738c56c4730a7d44deb09d0802"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -918,6 +938,10 @@ automat = [
 backcall = [
     {file = "backcall-0.2.0-py2.py3-none-any.whl", hash = "sha256:fbbce6a29f263178a1f7915c1940bde0ec2b2a967566fe1c65c1dfb7422bd255"},
     {file = "backcall-0.2.0.tar.gz", hash = "sha256:5cbdbf27be5e7cfadb448baf0aa95508f91f2bbc6c6437cd9cd06e2a4c215e1e"},
+]
+bnmutils = [
+    {file = "bnmutils-1.0.3-py3-none-any.whl", hash = "sha256:62fef049f3b83d120573c5eb823862a746cc2d9e6c50ebd95976ab2ffb831c0f"},
+    {file = "bnmutils-1.0.3.tar.gz", hash = "sha256:bf21ac21e04aa1db35160bb38690e22d8d10571b6dd1364c331cdb7031f14021"},
 ]
 boto3 = [
     {file = "boto3-1.13.26-py2.py3-none-any.whl", hash = "sha256:1100727d3e56c2b89250f532940daddad658cd39035ad044d0244dea2416f8fc"},
@@ -1061,6 +1085,10 @@ jedi = [
 jmespath = [
     {file = "jmespath-0.10.0-py2.py3-none-any.whl", hash = "sha256:cdf6525904cc597730141d61b36f2e4b8ecc257c420fa2f4549bac2c2d0cb72f"},
     {file = "jmespath-0.10.0.tar.gz", hash = "sha256:b85d0567b8666149a93172712e68920734333c0ce7e89b78b3e987f71e5ed4f9"},
+]
+logme = [
+    {file = "logme-1.3.2-py2.py3-none-any.whl", hash = "sha256:320006cf6c7898ca76698b48f9a40fb172bdafd713a1c942baaa70efcb6c7338"},
+    {file = "logme-1.3.2.tar.gz", hash = "sha256:c1f0a7f72750669fba500920aadcd10a665c3bc176425c0de97cdd7b5b19e65f"},
 ]
 lxml = [
     {file = "lxml-4.5.1-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:ee2be8b8f72a2772e72ab926a3bccebf47bb727bda41ae070dc91d1fb759b726"},
