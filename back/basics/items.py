@@ -8,11 +8,13 @@ class BasicsItem(scrapy.Item):
     """Items will be the title of post, author and the first paragraph."""
 
     title = scrapy.Field(
-        input_processor=MapCompose(remove_tags), output_processor=TakeFirst()
+        input_processor=MapCompose(remove_tags), output_processor=TakeFirst(),
     )
     author = scrapy.Field(
-        input_processor=MapCompose(remove_tags), output_processor=TakeFirst()
+        input_processor=MapCompose(remove_tags), output_processor=TakeFirst(),
     )
-    para = scrapy.Field(
-        input_processor=MapCompose(remove_tags), output_processor=Join()
+    paragraph = scrapy.Field(
+        input_processor=MapCompose(remove_tags), output_processor=Join(),
     )
+    image_urls = scrapy.Field()
+    images = scrapy.Field()

@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 import os
+from pathlib import Path
 
 from confidential import SecretsManager
-from databases import Database
 
 confidential = SecretsManager(
-    secrets_file_default="/home/mrnobody/projects/back2basicspider/.confidential/default.json",
+    secrets_file_default=(
+        "/home/mrnobody/projects/back2basicspider/.confidential/default.json"
+    ),
     secrets_file=os.environ.get("SECRETS_FILE"),
     region_name="us-east-1",
 )
@@ -18,10 +20,8 @@ NEWSPIDER_MODULE = "basics.spiders"
 
 LOG_LEVEL = "INFO"
 DB_URI = confidential["DB_URI"]
-DATABASE: Database(DB_URI)
-
-# Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'basics (+http://www.yourdomain.com)'
+DEPTH_STATS_VERBOSE = True
+USER_AGENT = "basics (mrcartoonster@gmail.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -32,7 +32,7 @@ ROBOTSTXT_OBEY = True
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-# DOWNLOAD_DELAY = 3
+# DOWNLOAD_DELAY = .63
 # The download delay setting will honor only one of:
 # CONCURRENT_REQUESTS_PER_DOMAIN = 16
 # CONCURRENT_REQUESTS_PER_IP = 16
@@ -45,8 +45,8 @@ ROBOTSTXT_OBEY = True
 
 # Override the default request headers:
 # DEFAULT_REQUEST_HEADERS = {
-#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#   'Accept-Language': 'en',
+#  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+#  'Accept-Language': 'en',
 # }
 
 # Enable or disable spider middlewares
@@ -69,25 +69,33 @@ ROBOTSTXT_OBEY = True
 
 ITEM_PIPELINES = {
     "basics.pipelines.BasicsPipeline": 300,
+    "scrapy.pipelines.images.ImagesPipeline": 1,
+    "scrapy.pipelines.files.FilesPipeline": 1,
 }
 
+IMAGES_STORE = str(Path("images/").absolute())
+FILES_STORE = str(Path("files/").absolute())
+IMAGES_THUMBS = {
+    "small": (50, 50),
+    "big": (270, 270),
+}
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
-# AUTOTHROTTLE_ENABLED = True
+AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-# AUTOTHROTTLE_START_DELAY = 5
+AUTOTHROTTLE_START_DELAY = 5
 # The maximum download delay to be set in case of high latencies
-# AUTOTHROTTLE_MAX_DELAY = 60
+AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
-# AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
 # Enable showing throttling stats for every response received:
-# AUTOTHROTTLE_DEBUe = False
+# UTOTHROTTLE_DEBUG = False
 
 # Enable and configure HTTP caching (disabled by default)
-# See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-# HTTPCACHE_ENABLED = True
-# HTTPCACHE_EXPIRATION_SECS = 0
-# HTTPCACHE_DIR = 'httpcache'
+# See #httpcache-middleware-settings
+HTTPCACHE_ENABLED = True
+HTTPCACHE_EXPIRATION_SECS = 10
+HTTPCACHE_DIR = "httpcache"
 # HTTPCACHE_IGNORE_HTTP_CODES = []
-# HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
