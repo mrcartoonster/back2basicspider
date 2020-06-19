@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from scrapy.loader import ItemLoader
-
 from basics.items import BasicsItem
+from scrapy.loader import ItemLoader
 
 
 class BaseSpider(scrapy.Spider):
@@ -20,7 +19,9 @@ class BaseSpider(scrapy.Spider):
 
     def parsing(self, response):
         """Parse first paragraph."""
-        para = response.xpath('//div[@class="r43lxo-0 hEDDLA js_post-content"]')
+        para = response.xpath(
+            '//div[@class="r43lxo-0 hEDDLA js_post-content"]'
+        )
 
         for p in para:
             loader = ItemLoader(item=BasicsItem(), selector=p)
