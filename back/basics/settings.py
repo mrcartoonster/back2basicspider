@@ -19,6 +19,7 @@ SPIDER_MODULES = ["basics.spiders"]
 NEWSPIDER_MODULE = "basics.spiders"
 
 LOG_LEVEL = "INFO"
+LOG_FILE = Path() / "logs.txt"
 DB_URI = confidential["DB_URI"]
 DEPTH_STATS_VERBOSE = True
 USER_AGENT = "basics (mrcartoonster@gmail.com)"

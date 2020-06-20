@@ -1,0 +1,485 @@
+2020-06-20 17:45:26 [scrapy.utils.log] INFO: Scrapy 2.1.0 started (bot: basics)
+2020-06-20 17:45:26 [scrapy.utils.log] INFO: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+2020-06-20 17:45:26 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+2020-06-20 17:45:26 [scrapy.extensions.telnet] INFO: Telnet Password: cc3e34de5e84aa21
+2020-06-20 17:45:26 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2020-06-20 17:45:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2020-06-20 17:45:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-20 17:45:26 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline',
+ 'scrapy.pipelines.files.FilesPipeline',
+ 'basics.pipelines.BasicsPipeline']
+2020-06-20 17:45:26 [scrapy.core.engine] INFO: Spider opened
+2020-06-20 17:45:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-20 17:45:26 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-06-20 17:45:33 [base] INFO: Parse function called on https://lifehacker.com/c/back-to-basics
+2020-06-20 17:45:36 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:36 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Meghan Moravcik Walbert',
+ 'images': [],
+ 'paragraph': 'Generally speaking, babies and sleep and blankets do not go '
+              'hand-in-hand. For many years, the   has recommended  babies be '
+              'put to sleep on their backs, on a firm sleep surface  free '
+              'from  loose bedding or soft objects. There’s  one   exception '
+              'to this no-blanket dictate : t he swaddle.',
+ 'title': 'How to Swaddle a Baby'}
+2020-06-20 17:45:36 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:36 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Imani Bashir',
+ 'images': [],
+ 'paragraph': 'With the cost of baggage increasing, the risk of lost or '
+              'damaged luggage and the unsavory fact that checking a bag means '
+              'the bag will touch many surfaces ( surfaces , it’s smart to '
+              'stick with a carry-on.',
+ 'title': 'How to Pack Everything You Need Into One Carry-On'}
+2020-06-20 17:45:37 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:37 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:37 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Meghan Moravcik Walbert',
+ 'images': [],
+ 'paragraph': 'It seems like it should be a fairly easy thing, kids’ shoe '
+              'sizes. And yet  their feet grown so damn rapidly,  it’s like '
+              'first they’re a four and then they’re an 8 (how is a toddler a '
+              'size 8 when   a size 8??) and then a 12 and now, wait, a 1.5? '
+              'What just happened there?',
+ 'title': "How to Figure Out Your Kid's Shoe Size"}
+2020-06-20 17:45:37 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:37 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Imani Bashir',
+ 'images': [],
+ 'paragraph': 'International travel involves a lot of moving parts: from   and '
+              'booking your itinerary to budgeting your trip and learning the '
+              'basics of the language and local customs. An additional '
+              'component you may need to figure out is whether or not you need '
+              'a visa. Thankfully, the United States has visa-free travel to '
+              '184 countries around the world. However, there are many '
+              'countries such as Cuba, China, and Ghana that require US '
+              'citizens to obtain a visa before boarding your flight.',
+ 'title': 'How to Get a Visa'}
+2020-06-20 17:45:38 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:38 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'David Murphy',
+ 'images': [],
+ 'paragraph': 'Updating your Mac is easy. And if all you do is download apps '
+              'from the Mac App Store, keeping those updated  , too. But if '
+              'you want to make sure   has the most recent features and '
+              'security fixes, we have a few tips that can help you out.',
+ 'title': 'How to Update Your Mac and All of Its Apps'}
+2020-06-20 17:45:39 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:39 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Rachel Fairbank',
+ 'images': [],
+ 'paragraph': 'Cleaning your windows is one of those tasks that feels almost '
+              'insurmountable. It’s obvious when they need to be cleaned, but '
+              'it’s also obviously going to be a lot of work. Still, you’d '
+              'love to have a clear view out the window one of these '
+              'days—especially since that’s primarily how you connect with the '
+              'world in 2020.',
+ 'title': 'How to Clean Your Windows Inside and Out'}
+2020-06-20 17:45:39 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:39 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Emily Long',
+ 'images': [],
+ 'paragraph': 'A bike helmet can literally save your life if you fall and hit '
+              'your head during  a ride—but it’ll do you way less good '
+              '(perhaps no good at all) if it doesn’t fit you properly.',
+ 'title': 'How to Fit Your Bike Helmet'}
+2020-06-20 17:45:39 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:39 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Rachel Fairbank',
+ 'images': [],
+ 'paragraph': 'Bleach is useful for keeping your clothes looking fresh and '
+              'bright. It can  also  be bad news for your favorite shirt  if '
+              'you don’t know what you’re doing . If you aren’t used to   it , '
+              'using bleach  may   be a little intimidating—so here’s how to '
+              'do so  with confidence while doing ( not ruining)  your laundry '
+              '. ',
+ 'title': 'How to Use Bleach Without Ruining Your Clothes'}
+2020-06-20 17:45:39 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:39 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Emily Price',
+ 'images': [],
+ 'paragraph': 'We’ve all been there: You need to work on your computer for a '
+              'few minutes and there’s no free wifi in sight. If you have a '
+              'smartphone in your pocket, you might be in luck. Most '
+              'smartphone data plans allow you to use your phone as a mobile '
+              'hotspot, which means you can share that data connection with '
+              'your computer and get your work done.',
+ 'title': 'How to Use Your Smartphone as a Hotspot'}
+2020-06-20 17:45:39 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:39 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Emily Price',
+ 'images': [],
+ 'paragraph': 'Unlike Android devices, whose major updates roll out slowly '
+              'across different devices, carriers, and manufacturers, all '
+              'Apple devices get new updates at exactly the same time. The act '
+              'of updating your iPhone or iPad is easy, but there are plenty '
+              'of details you should know regarding OS and app '
+              'updates—including  , if you want to live on the wild side.',
+ 'title': 'How to Update Your iPhone and All Your Apps'}
+2020-06-20 17:45:39 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:39 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Imani Bashir',
+ 'images': [],
+ 'paragraph': 'Never booked a flight before? Look, we’ve been there. Maybe '
+              'someone else has always done it for you. Maybe you’re just out '
+              'of college and your parents always made the travel '
+              'arrangements. Or you’ve just… never flown before.',
+ 'title': 'How to Book a Flight'}
+2020-06-20 17:45:39 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:39 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:39 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Emily Price',
+ 'images': [],
+ 'paragraph': 'Using the Mail app on your computer can be a lot more '
+              'convenient than  logging into a website like Gmail. There are '
+              'a  number of benefits—including the biggest, being able to '
+              'access your downloaded email whenever you’re lacking  an '
+              'internet connection.',
+ 'title': 'How to Set Up Mail on Your Windows 10 Computer'}
+2020-06-20 17:45:40 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:40 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Lisa Rowan',
+ 'images': [],
+ 'paragraph': 'Even if you have a retirement account or other investment '
+              'portfolio, you might be confused about what the stock market '
+              'actually  . So let’s sort it out.',
+ 'title': 'What Exactly Is the Stock Market?'}
+2020-06-20 17:45:41 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:41 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'A.A. Newton',
+ 'images': [],
+ 'paragraph': 'Late last year, I found myself at a crossroads. After ten and a '
+              'half years, I was getting real fucking tired of dealing with my '
+              'cast iron skillet. Out of nowhere, it suddenly refused to take '
+              'on seasoning—and hauling it around was worsening the chronic '
+              'wrist pain I developed the moment I turned 30. I had two '
+              'choices: Either figure out what was going wrong, or give up o n '
+              'cast iron for good. ',
+ 'title': "Why You Should Season Your Cast Iron the 'Wrong' Way"}
+2020-06-20 17:45:41 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:41 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Lisa Rowan',
+ 'images': [],
+ 'paragraph': 'I have a handful of credit cards, all of which I keep for '
+              'different reasons. There’s the one I use for my favorite '
+              'airline, the one I use to rack up travel points, the one I got '
+              'in college and keep for mostly sentimental reasons ... the list '
+              'goes on. ',
+ 'title': 'How to Choose Your Next Credit Card'}
+2020-06-20 17:45:42 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:42 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:43 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:45:43 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-06-20 17:45:43 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 10643,
+ 'downloader/request_count': 27,
+ 'downloader/request_method_count/GET': 27,
+ 'downloader/response_bytes': 1421142,
+ 'downloader/response_count': 27,
+ 'downloader/response_status_count/200': 26,
+ 'downloader/response_status_count/301': 1,
+ 'elapsed_time_seconds': 17.369379,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 6, 20, 17, 45, 43, 528946),
+ 'httpcache/firsthand': 27,
+ 'httpcache/miss': 27,
+ 'httpcache/store': 27,
+ 'item_dropped_count': 15,
+ 'item_dropped_reasons_count/DropItem': 15,
+ 'item_scraped_count': 5,
+ 'log_count/INFO': 31,
+ 'log_count/WARNING': 15,
+ 'memusage/max': 66027520,
+ 'memusage/startup': 66027520,
+ 'request_depth_count/0': 1,
+ 'request_depth_count/1': 20,
+ 'request_depth_max': 1,
+ 'response_received_count': 26,
+ 'robotstxt/request_count': 5,
+ 'robotstxt/response_count': 5,
+ 'robotstxt/response_status_count/200': 5,
+ 'scheduler/dequeued': 22,
+ 'scheduler/dequeued/memory': 22,
+ 'scheduler/enqueued': 22,
+ 'scheduler/enqueued/memory': 22,
+ 'start_time': datetime.datetime(2020, 6, 20, 17, 45, 26, 159567)}
+2020-06-20 17:45:43 [scrapy.core.engine] INFO: Spider closed (finished)
+2020-06-20 17:48:20 [scrapy.utils.log] INFO: Scrapy 2.1.0 started (bot: basics)
+2020-06-20 17:48:20 [scrapy.utils.log] INFO: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+2020-06-20 17:51:15 [scrapy.utils.log] INFO: Scrapy 2.1.0 started (bot: basics)
+2020-06-20 17:51:15 [scrapy.utils.log] INFO: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+2020-06-20 17:51:15 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_ENABLED': False,
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+2020-06-20 17:51:15 [scrapy.extensions.telnet] INFO: Telnet Password: 054e3c6ab8da8bf7
+2020-06-20 17:51:15 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2020-06-20 17:51:15 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2020-06-20 17:51:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-06-20 17:51:15 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline',
+ 'scrapy.pipelines.files.FilesPipeline',
+ 'basics.pipelines.BasicsPipeline']
+2020-06-20 17:51:15 [scrapy.core.engine] INFO: Spider opened
+2020-06-20 17:51:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-06-20 17:51:15 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-06-20 17:51:24 [base] INFO: Parse function called on https://lifehacker.com/c/back-to-basics
+2020-06-20 17:51:26 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:26 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Imani Bashir',
+ 'images': [],
+ 'paragraph': 'With the cost of baggage increasing, the risk of lost or '
+              'damaged luggage and the unsavory fact that checking a bag means '
+              'the bag will touch many surfaces ( surfaces , it’s smart to '
+              'stick with a carry-on.',
+ 'title': 'How to Pack Everything You Need Into One Carry-On'}
+2020-06-20 17:51:27 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:28 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:28 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Meghan Moravcik Walbert',
+ 'images': [],
+ 'paragraph': 'Generally speaking, babies and sleep and blankets do not go '
+              'hand-in-hand. For many years, the   has recommended  babies be '
+              'put to sleep on their backs, on a firm sleep surface  free '
+              'from  loose bedding or soft objects. There’s  one   exception '
+              'to this no-blanket dictate : t he swaddle.',
+ 'title': 'How to Swaddle a Baby'}
+2020-06-20 17:51:28 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:28 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Imani Bashir',
+ 'images': [],
+ 'paragraph': 'International travel involves a lot of moving parts: from   and '
+              'booking your itinerary to budgeting your trip and learning the '
+              'basics of the language and local customs. An additional '
+              'component you may need to figure out is whether or not you need '
+              'a visa. Thankfully, the United States has visa-free travel to '
+              '184 countries around the world. However, there are many '
+              'countries such as Cuba, China, and Ghana that require US '
+              'citizens to obtain a visa before boarding your flight.',
+ 'title': 'How to Get a Visa'}
+2020-06-20 17:51:28 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:28 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Lisa Rowan',
+ 'images': [],
+ 'paragraph': 'Even if you have a retirement account or other investment '
+              'portfolio, you might be confused about what the stock market '
+              'actually  . So let’s sort it out.',
+ 'title': 'What Exactly Is the Stock Market?'}
+2020-06-20 17:51:28 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:28 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'David Murphy',
+ 'images': [],
+ 'paragraph': 'Updating your Mac is easy. And if all you do is download apps '
+              'from the Mac App Store, keeping those updated  , too. But if '
+              'you want to make sure   has the most recent features and '
+              'security fixes, we have a few tips that can help you out.',
+ 'title': 'How to Update Your Mac and All of Its Apps'}
+2020-06-20 17:51:29 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:29 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:29 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Rachel Fairbank',
+ 'images': [],
+ 'paragraph': 'Cleaning your windows is one of those tasks that feels almost '
+              'insurmountable. It’s obvious when they need to be cleaned, but '
+              'it’s also obviously going to be a lot of work. Still, you’d '
+              'love to have a clear view out the window one of these '
+              'days—especially since that’s primarily how you connect with the '
+              'world in 2020.',
+ 'title': 'How to Clean Your Windows Inside and Out'}
+2020-06-20 17:51:29 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:29 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Emily Long',
+ 'images': [],
+ 'paragraph': 'A bike helmet can literally save your life if you fall and hit '
+              'your head during  a ride—but it’ll do you way less good '
+              '(perhaps no good at all) if it doesn’t fit you properly.',
+ 'title': 'How to Fit Your Bike Helmet'}
+2020-06-20 17:51:29 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:29 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Rachel Fairbank',
+ 'images': [],
+ 'paragraph': 'Bleach is useful for keeping your clothes looking fresh and '
+              'bright. It can  also  be bad news for your favorite shirt  if '
+              'you don’t know what you’re doing . If you aren’t used to   it , '
+              'using bleach  may   be a little intimidating—so here’s how to '
+              'do so  with confidence while doing ( not ruining)  your laundry '
+              '. ',
+ 'title': 'How to Use Bleach Without Ruining Your Clothes'}
+2020-06-20 17:51:29 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:29 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Emily Price',
+ 'images': [],
+ 'paragraph': 'We’ve all been there: You need to work on your computer for a '
+              'few minutes and there’s no free wifi in sight. If you have a '
+              'smartphone in your pocket, you might be in luck. Most '
+              'smartphone data plans allow you to use your phone as a mobile '
+              'hotspot, which means you can share that data connection with '
+              'your computer and get your work done.',
+ 'title': 'How to Use Your Smartphone as a Hotspot'}
+2020-06-20 17:51:29 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:29 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Emily Price',
+ 'images': [],
+ 'paragraph': 'Unlike Android devices, whose major updates roll out slowly '
+              'across different devices, carriers, and manufacturers, all '
+              'Apple devices get new updates at exactly the same time. The act '
+              'of updating your iPhone or iPad is easy, but there are plenty '
+              'of details you should know regarding OS and app '
+              'updates—including  , if you want to live on the wild side.',
+ 'title': 'How to Update Your iPhone and All Your Apps'}
+2020-06-20 17:51:29 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:29 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Imani Bashir',
+ 'images': [],
+ 'paragraph': 'Never booked a flight before? Look, we’ve been there. Maybe '
+              'someone else has always done it for you. Maybe you’re just out '
+              'of college and your parents always made the travel '
+              'arrangements. Or you’ve just… never flown before.',
+ 'title': 'How to Book a Flight'}
+2020-06-20 17:51:29 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:29 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Emily Price',
+ 'images': [],
+ 'paragraph': 'Using the Mail app on your computer can be a lot more '
+              'convenient than  logging into a website like Gmail. There are '
+              'a  number of benefits—including the biggest, being able to '
+              'access your downloaded email whenever you’re lacking  an '
+              'internet connection.',
+ 'title': 'How to Set Up Mail on Your Windows 10 Computer'}
+2020-06-20 17:51:29 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:29 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Meghan Moravcik Walbert',
+ 'images': [],
+ 'paragraph': 'It seems like it should be a fairly easy thing, kids’ shoe '
+              'sizes. And yet  their feet grown so damn rapidly,  it’s like '
+              'first they’re a four and then they’re an 8 (how is a toddler a '
+              'size 8 when   a size 8??) and then a 12 and now, wait, a 1.5? '
+              'What just happened there?',
+ 'title': "How to Figure Out Your Kid's Shoe Size"}
+2020-06-20 17:51:31 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:31 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:31 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'A.A. Newton',
+ 'images': [],
+ 'paragraph': 'Late last year, I found myself at a crossroads. After ten and a '
+              'half years, I was getting real fucking tired of dealing with my '
+              'cast iron skillet. Out of nowhere, it suddenly refused to take '
+              'on seasoning—and hauling it around was worsening the chronic '
+              'wrist pain I developed the moment I turned 30. I had two '
+              'choices: Either figure out what was going wrong, or give up o n '
+              'cast iron for good. ',
+ 'title': "Why You Should Season Your Cast Iron the 'Wrong' Way"}
+2020-06-20 17:51:31 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:31 [scrapy.core.scraper] WARNING: Dropped: Not the author we want.
+{'author': 'Lisa Rowan',
+ 'images': [],
+ 'paragraph': 'I have a handful of credit cards, all of which I keep for '
+              'different reasons. There’s the one I use for my favorite '
+              'airline, the one I use to rack up travel points, the one I got '
+              'in college and keep for mostly sentimental reasons ... the list '
+              'goes on. ',
+ 'title': 'How to Choose Your Next Credit Card'}
+2020-06-20 17:51:32 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:32 [base] INFO: Parse function called on {response.url}
+2020-06-20 17:51:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-06-20 17:51:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 10643,
+ 'downloader/request_count': 27,
+ 'downloader/request_method_count/GET': 27,
+ 'downloader/response_bytes': 1421457,
+ 'downloader/response_count': 27,
+ 'downloader/response_status_count/200': 26,
+ 'downloader/response_status_count/301': 1,
+ 'elapsed_time_seconds': 17.163583,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 6, 20, 17, 51, 33, 6776),
+ 'httpcache/firsthand': 27,
+ 'httpcache/miss': 27,
+ 'httpcache/store': 27,
+ 'item_dropped_count': 15,
+ 'item_dropped_reasons_count/DropItem': 15,
+ 'item_scraped_count': 5,
+ 'log_count/INFO': 31,
+ 'log_count/WARNING': 15,
+ 'memusage/max': 66035712,
+ 'memusage/startup': 66035712,
+ 'request_depth_count/0': 1,
+ 'request_depth_count/1': 20,
+ 'request_depth_max': 1,
+ 'response_received_count': 26,
+ 'robotstxt/request_count': 5,
+ 'robotstxt/response_count': 5,
+ 'robotstxt/response_status_count/200': 5,
+ 'scheduler/dequeued': 22,
+ 'scheduler/dequeued/memory': 22,
+ 'scheduler/enqueued': 22,
+ 'scheduler/enqueued/memory': 22,
+ 'start_time': datetime.datetime(2020, 6, 20, 17, 51, 15, 843193)}
+2020-06-20 17:51:33 [scrapy.core.engine] INFO: Spider closed (finished)
