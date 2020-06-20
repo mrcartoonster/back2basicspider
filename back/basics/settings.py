@@ -2,6 +2,7 @@
 import os
 from pathlib import Path
 
+import pendulum as p
 from confidential import SecretsManager
 
 confidential = SecretsManager(
@@ -20,6 +21,8 @@ NEWSPIDER_MODULE = "basics.spiders"
 
 LOG_LEVEL = "INFO"
 LOG_FILE = Path() / "logs.txt"
+LOG_DATEFORMAT = p.now().format("L" * 4)
+
 DB_URI = confidential["DB_URI"]
 DEPTH_STATS_VERBOSE = True
 USER_AGENT = "basics (mrcartoonster@gmail.com)"
