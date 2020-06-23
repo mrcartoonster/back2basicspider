@@ -4,7 +4,8 @@ from pathlib import Path
 
 import pendulum as p
 from confidential import SecretsManager
-from .loggers.politelogger import PoliteLogFormatter
+
+from .loggers.politelogger import CrawlLog
 
 confidential = SecretsManager(
     secrets_file_default=(
@@ -23,8 +24,8 @@ NEWSPIDER_MODULE = "basics.spiders"
 LOG_LEVEL = "INFO"
 LOG_FILE = Path() / "logs.txt"
 LOG_DATEFORMAT = p.now().format("L" * 4)
-LOG_FORMAT = '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s'
-LOG_FORMATTER = PoliteLogFormatter
+LOG_FORMAT = "%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s"
+LOG_FORMATTER = CrawlLog
 
 DB_URI = confidential["DB_URI"]
 DEPTH_STATS_VERBOSE = True

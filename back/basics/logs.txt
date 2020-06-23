@@ -779,7 +779,7 @@ Tuesday, June 23, 2020 2:01 PM [scrapy.extensions.telnet]i INFO 67: Telnet conso
 Tuesday, June 23, 2020 2:01 PM [base]i INFO 15: Parse function called on https://lifehacker.com/c/back-to-basics
 Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
 Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
 Traceback (most recent call last):
   File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
     current.result = callback(current.result, *args, **kw)
@@ -790,7 +790,7 @@ Traceback (most recent call last):
 scrapy.exceptions.DropItem: Not the author we want.
 Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
 Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
 Traceback (most recent call last):
   File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
     current.result = callback(current.result, *args, **kw)
@@ -801,7 +801,7 @@ Traceback (most recent call last):
 scrapy.exceptions.DropItem: Not the author we want.
 Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
 Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
 Traceback (most recent call last):
   File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
     current.result = callback(current.result, *args, **kw)
@@ -812,7 +812,7 @@ Traceback (most recent call last):
 scrapy.exceptions.DropItem: Not the author we want.
 Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
 Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
 Traceback (most recent call last):
   File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
     current.result = callback(current.result, *args, **kw)
@@ -823,74 +823,7 @@ Traceback (most recent call last):
 scrapy.exceptions.DropItem: Not the author we want.
 Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
 Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
-Traceback (most recent call last):
-  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
-    current.result = callback(current.result, *args, **kw)
-  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/scrapy/utils/defer.py", line 154, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "/home/mrnobody/projects/back2basicspider/back/basics/pipelines.py", line 14, in process_item
-    raise DropItem("Not the author we want.")
-scrapy.exceptions.DropItem: Not the author we want.
-Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
-Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
-Traceback (most recent call last):
-  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
-    current.result = callback(current.result, *args, **kw)
-  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/scrapy/utils/defer.py", line 154, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "/home/mrnobody/projects/back2basicspider/back/basics/pipelines.py", line 14, in process_item
-    raise DropItem("Not the author we want.")
-scrapy.exceptions.DropItem: Not the author we want.
-Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
-Traceback (most recent call last):
-  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
-    current.result = callback(current.result, *args, **kw)
-  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/scrapy/utils/defer.py", line 154, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "/home/mrnobody/projects/back2basicspider/back/basics/pipelines.py", line 14, in process_item
-    raise DropItem("Not the author we want.")
-scrapy.exceptions.DropItem: Not the author we want.
-Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
-Traceback (most recent call last):
-  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
-    current.result = callback(current.result, *args, **kw)
-  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/scrapy/utils/defer.py", line 154, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "/home/mrnobody/projects/back2basicspider/back/basics/pipelines.py", line 14, in process_item
-    raise DropItem("Not the author we want.")
-scrapy.exceptions.DropItem: Not the author we want.
-Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
-Traceback (most recent call last):
-  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
-    current.result = callback(current.result, *args, **kw)
-  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/scrapy/utils/defer.py", line 154, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "/home/mrnobody/projects/back2basicspider/back/basics/pipelines.py", line 14, in process_item
-    raise DropItem("Not the author we want.")
-scrapy.exceptions.DropItem: Not the author we want.
-Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
-Traceback (most recent call last):
-  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
-    current.result = callback(current.result, *args, **kw)
-  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/scrapy/utils/defer.py", line 154, in f
-    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
-  File "/home/mrnobody/projects/back2basicspider/back/basics/pipelines.py", line 14, in process_item
-    raise DropItem("Not the author we want.")
-scrapy.exceptions.DropItem: Not the author we want.
-Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
 Traceback (most recent call last):
   File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
     current.result = callback(current.result, *args, **kw)
@@ -902,7 +835,7 @@ scrapy.exceptions.DropItem: Not the author we want.
 Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
 Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
 Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
 Traceback (most recent call last):
   File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
     current.result = callback(current.result, *args, **kw)
@@ -913,7 +846,74 @@ Traceback (most recent call last):
 scrapy.exceptions.DropItem: Not the author we want.
 Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
 Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
+Traceback (most recent call last):
+  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/scrapy/utils/defer.py", line 154, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/mrnobody/projects/back2basicspider/back/basics/pipelines.py", line 14, in process_item
+    raise DropItem("Not the author we want.")
+scrapy.exceptions.DropItem: Not the author we want.
+Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
+Traceback (most recent call last):
+  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/scrapy/utils/defer.py", line 154, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/mrnobody/projects/back2basicspider/back/basics/pipelines.py", line 14, in process_item
+    raise DropItem("Not the author we want.")
+scrapy.exceptions.DropItem: Not the author we want.
+Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
+Traceback (most recent call last):
+  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/scrapy/utils/defer.py", line 154, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/mrnobody/projects/back2basicspider/back/basics/pipelines.py", line 14, in process_item
+    raise DropItem("Not the author we want.")
+scrapy.exceptions.DropItem: Not the author we want.
+Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
+Traceback (most recent call last):
+  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/scrapy/utils/defer.py", line 154, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/mrnobody/projects/back2basicspider/back/basics/pipelines.py", line 14, in process_item
+    raise DropItem("Not the author we want.")
+scrapy.exceptions.DropItem: Not the author we want.
+Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
+Traceback (most recent call last):
+  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/scrapy/utils/defer.py", line 154, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/mrnobody/projects/back2basicspider/back/basics/pipelines.py", line 14, in process_item
+    raise DropItem("Not the author we want.")
+scrapy.exceptions.DropItem: Not the author we want.
+Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
+Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
+Traceback (most recent call last):
+  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/scrapy/utils/defer.py", line 154, in f
+    return deferred_from_coro(coro_f(*coro_args, **coro_kwargs))
+  File "/home/mrnobody/projects/back2basicspider/back/basics/pipelines.py", line 14, in process_item
+    raise DropItem("Not the author we want.")
+scrapy.exceptions.DropItem: Not the author we want.
+Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
 Traceback (most recent call last):
   File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
     current.result = callback(current.result, *args, **kw)
@@ -926,7 +926,7 @@ Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {respon
 Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
 Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
 Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
 Traceback (most recent call last):
   File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
     current.result = callback(current.result, *args, **kw)
@@ -937,7 +937,7 @@ Traceback (most recent call last):
 scrapy.exceptions.DropItem: Not the author we want.
 Tuesday, June 23, 2020 2:01 PM [base]i INFO 22: Parse function called on {response.url}
 Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: Unhandled error in Deferred:
-Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154: 
+Tuesday, June 23, 2020 2:01 PM [twisted]i CRITICAL 154:
 Traceback (most recent call last):
   File "/home/mrnobody/.cache/pypoetry/virtualenvs/back2basicspider-nK0VawKa-py3.8/lib/python3.8/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
     current.result = callback(current.result, *args, **kw)
@@ -991,6 +991,193 @@ Tuesday, June 23, 2020 2:22 PM [scrapy.crawler]i INFO 59: Overridden settings:
  'LOG_FILE': PosixPath('logs.txt'),
  'LOG_FORMAT': '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s',
  'LOG_FORMATTER': <class 'basics.loggers.politelogger.PoliteLogFormatter'>,
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+Tuesday, June 23, 2020 2:49 PM [scrapy.utils.log]i INFO 145: Scrapy 2.1.0 started (bot: basics)
+Tuesday, June 23, 2020 2:49 PM [scrapy.utils.log]i INFO 147: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+Tuesday, June 23, 2020 2:49 PM [scrapy.crawler]i INFO 59: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_DATEFORMAT': 'Tuesday, June 23, 2020 2:49 PM',
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_FORMAT': '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s',
+ 'LOG_FORMATTER': <class 'basics.loggers.politelogger.PoliteLogFormatter'>,
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+Tuesday, June 23, 2020 2:51 PM [scrapy.utils.log]i INFO 145: Scrapy 2.1.0 started (bot: basics)
+Tuesday, June 23, 2020 2:51 PM [scrapy.utils.log]i INFO 147: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+Tuesday, June 23, 2020 2:51 PM [scrapy.crawler]i INFO 59: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_DATEFORMAT': 'Tuesday, June 23, 2020 2:51 PM',
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_FORMAT': '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s',
+ 'LOG_FORMATTER': <class 'basics.loggers.politelogger.PoliteLogFormatter'>,
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+Tuesday, June 23, 2020 2:54 PM [scrapy.utils.log]i INFO 145: Scrapy 2.1.0 started (bot: basics)
+Tuesday, June 23, 2020 2:54 PM [scrapy.utils.log]i INFO 147: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+Tuesday, June 23, 2020 2:54 PM [scrapy.crawler]i INFO 59: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_DATEFORMAT': 'Tuesday, June 23, 2020 2:54 PM',
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_FORMAT': '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s',
+ 'LOG_FORMATTER': <class 'basics.settings.PoliteLogFormatter'>,
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+Tuesday, June 23, 2020 2:55 PM [scrapy.utils.log]i INFO 145: Scrapy 2.1.0 started (bot: basics)
+Tuesday, June 23, 2020 2:55 PM [scrapy.utils.log]i INFO 147: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+Tuesday, June 23, 2020 2:55 PM [scrapy.crawler]i INFO 59: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_DATEFORMAT': 'Tuesday, June 23, 2020 2:55 PM',
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_FORMAT': '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s',
+ 'LOG_FORMATTER': <class 'basics.settings.PoliteLogFormatter'>,
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+Tuesday, June 23, 2020 2:58 PM [scrapy.utils.log]i INFO 145: Scrapy 2.1.0 started (bot: basics)
+Tuesday, June 23, 2020 2:58 PM [scrapy.utils.log]i INFO 147: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+Tuesday, June 23, 2020 2:58 PM [scrapy.crawler]i INFO 59: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_DATEFORMAT': 'Tuesday, June 23, 2020 2:58 PM',
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_FORMAT': '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s',
+ 'LOG_FORMATTER': <class 'basics.loggers.politelogger.PoliteLogFormatter'>,
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+Tuesday, June 23, 2020 2:58 PM [scrapy.utils.log]i INFO 145: Scrapy 2.1.0 started (bot: basics)
+Tuesday, June 23, 2020 2:58 PM [scrapy.utils.log]i INFO 147: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+Tuesday, June 23, 2020 2:58 PM [scrapy.crawler]i INFO 59: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_DATEFORMAT': 'Tuesday, June 23, 2020 2:58 PM',
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_FORMAT': '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s',
+ 'LOG_FORMATTER': <class 'basics.loggers.politelogger.PoliteLogFormatter'>,
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+Tuesday, June 23, 2020 3:03 PM [scrapy.utils.log]i INFO 145: Scrapy 2.1.0 started (bot: basics)
+Tuesday, June 23, 2020 3:03 PM [scrapy.utils.log]i INFO 147: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+Tuesday, June 23, 2020 3:03 PM [scrapy.crawler]i INFO 59: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_DATEFORMAT': 'Tuesday, June 23, 2020 3:03 PM',
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_FORMAT': '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s',
+ 'LOG_FORMATTER': <class 'basics.loggers.politelogger.CrawlLog'>,
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+Tuesday, June 23, 2020 3:12 PM [scrapy.utils.log]i INFO 145: Scrapy 2.1.0 started (bot: basics)
+Tuesday, June 23, 2020 3:12 PM [scrapy.utils.log]i INFO 147: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+Tuesday, June 23, 2020 3:12 PM [scrapy.crawler]i INFO 59: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_DATEFORMAT': 'Tuesday, June 23, 2020 3:12 PM',
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_FORMAT': '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s',
+ 'LOG_FORMATTER': <class 'basics.loggers.politelogger.CrawlLog'>,
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+Tuesday, June 23, 2020 3:14 PM [scrapy.utils.log]i INFO 145: Scrapy 2.1.0 started (bot: basics)
+Tuesday, June 23, 2020 3:14 PM [scrapy.utils.log]i INFO 147: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+Tuesday, June 23, 2020 3:14 PM [scrapy.crawler]i INFO 59: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_DATEFORMAT': 'Tuesday, June 23, 2020 3:14 PM',
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_FORMAT': '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s',
+ 'LOG_FORMATTER': <class 'basics.loggers.politelogger.CrawlLog'>,
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+Tuesday, June 23, 2020 3:16 PM [scrapy.utils.log]i INFO 145: Scrapy 2.1.0 started (bot: basics)
+Tuesday, June 23, 2020 3:16 PM [scrapy.utils.log]i INFO 147: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+Tuesday, June 23, 2020 3:16 PM [scrapy.crawler]i INFO 59: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_DATEFORMAT': 'Tuesday, June 23, 2020 3:16 PM',
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_FORMAT': '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s',
+ 'LOG_FORMATTER': <class 'basics.loggers.politelogger.CrawlLog'>,
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'basics.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['basics.spiders'],
+ 'USER_AGENT': 'basics (mrcartoonster@gmail.com)'}
+Tuesday, June 23, 2020 3:18 PM [scrapy.utils.log]i INFO 145: Scrapy 2.1.0 started (bot: basics)
+Tuesday, June 23, 2020 3:18 PM [scrapy.utils.log]i INFO 147: Versions: lxml 4.5.1.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.2 (default, Mar 19 2020, 06:19:57) - [GCC 5.5.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Linux-4.15.0-91-generic-x86_64-with-glibc2.27
+Tuesday, June 23, 2020 3:18 PM [scrapy.crawler]i INFO 59: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'basics',
+ 'DEPTH_STATS_VERBOSE': True,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 10,
+ 'LOG_DATEFORMAT': 'Tuesday, June 23, 2020 3:18 PM',
+ 'LOG_FILE': PosixPath('logs.txt'),
+ 'LOG_FORMAT': '%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s',
+ 'LOG_FORMATTER': <class 'basics.loggers.politelogger.CrawlLog'>,
  'LOG_LEVEL': 'INFO',
  'NEWSPIDER_MODULE': 'basics.spiders',
  'ROBOTSTXT_OBEY': True,
