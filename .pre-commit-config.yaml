@@ -56,12 +56,6 @@ repos:
           - --trailing-comma
           - --use-parentheses
           - --balanced
--   repo: https://gitlab.com/pycqa/flake8
-    rev: 3.8.3
-    hooks:
-    -   id: flake8
-        args:
-          - --doctests
 -   repo: https://github.com/asottile/add-trailing-comma
     rev: v2.0.1
     hooks:
