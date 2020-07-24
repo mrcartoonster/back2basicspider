@@ -2,6 +2,14 @@
 import os
 from pathlib import Path
 
+from confidential import SecretsManager
+
+confidential = SecretsManager(
+    secrets_file_default=".confidential/default.json",
+    secrets_file=os.environ.get("SECRETS_FILE"),
+    region_name="us-east-1",
+)
+
 BOT_NAME = "basics"
 
 SPIDER_MODULES = ["basics.spiders"]
@@ -15,7 +23,7 @@ NEWSPIDER_MODULE = "basics.spiders"
 
 DEPTH_STATS_VERBOSE = True
 USER_AGENT = "basics (mrcartoonster@gmail.com)"
-
+DB_URI = confidential["DB_URI"]
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
