@@ -2,32 +2,17 @@
 import os
 from pathlib import Path
 
-import pendulum as p
-from confidential import SecretsManager
-
-from .loggers.politelogger import CrawlLog
-
-confidential = SecretsManager(
-    secrets_file_default=(
-        "/home/mrnobody/projects/back2basicspider/.confidential/default.json"
-    ),
-    secrets_file=os.environ.get("SECRETS_FILE"),
-    region_name="us-east-1",
-)
-
-
 BOT_NAME = "basics"
 
 SPIDER_MODULES = ["basics.spiders"]
 NEWSPIDER_MODULE = "basics.spiders"
 
-LOG_LEVEL = "INFO"
-LOG_FILE = Path() / "logs.txt"
-LOG_DATEFORMAT = p.now().format("L" * 4)
-LOG_FORMAT = "%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s"
-LOG_FORMATTER = CrawlLog
+#   LOG_LEVEL = "INFO"
+#   LOG_FILE = Path() / "logs.txt"
+#   LOG_DATEFORMAT = p.now().format("L" * 4)
+#   LOG_FORMAT = "%(asctime)s [%(name)s]i %(levelname)s %(lineno)d: %(message)s"
+#   LOG_FORMATTER = CrawlLog
 
-DB_URI = confidential["DB_URI"]
 DEPTH_STATS_VERBOSE = True
 USER_AGENT = "basics (mrcartoonster@gmail.com)"
 
